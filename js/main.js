@@ -20,7 +20,7 @@ const imposto = {
     },
     getIrrfRed(){
         let reduction, aliquota;
-        let base = this.salB - this.dep - this.getInssRed();
+        let base = this.salB - this.dep * 189.59 - this.getInssRed();
         if (base <= 1903.98){
             aliquota = 0;
             reduction = 0;
