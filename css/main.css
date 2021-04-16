@@ -6,11 +6,8 @@
   box-sizing: border-box;
 }
 
-html {
+html, body {
   min-height: 100%;
-}
-
-body {
   height: 100%;
   font-family: "Montserrat", sans-serif;
 }
@@ -66,12 +63,15 @@ body {
   flex-direction: column;
 }
 
+.table__container {
+  overflow-x: scroll;
+}
+
 table {
   display: none;
   border-collapse: collapse;
-  width: 100%;
+  width: 100vw;
   text-align: center;
-  overflow: scroll;
 }
 table thead tr {
   background-color: #307032;
