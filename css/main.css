@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@900&display=swap");
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+}
+
+body {
+  height: 100%;
+  font-family: "Montserrat", sans-serif;
+}
+
+.front {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  height: 100vh;
+}
+
+.title {
+  font-family: "Cinzel Decorative", cursive;
+  display: flex;
+  background-color: #4caf50;
+}
+.title__title {
+  text-align: center;
+  margin: auto auto;
+  padding: 0 10%;
+  color: white;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  color: #4caf50;
+  text-align: center;
+}
+.form input {
+  border-radius: 7px;
+  margin: 5px 0;
+  padding: 10px;
+  border: 1px solid #4caf50;
+}
+.form input:focus {
+  border-radius: 17px;
+}
+.form__submit {
+  border-radius: 7px;
+  margin: 5px 0;
+  padding: 10px;
+  border: 1px solid #4caf50;
+  background-color: #4caf50;
+  color: white;
+}
+.form__submit:hover {
+  background-color: #307032;
+  border-color: #307032;
+}
+.form__form {
+  margin: auto auto;
+  display: flex;
+  flex-direction: column;
+}
+
+table {
+  display: none;
+  border-collapse: collapse;
+  width: 100%;
+  text-align: center;
+  overflow: scroll;
+}
+table thead tr {
+  background-color: #307032;
+  color: white;
+  font-weight: bold;
+}
+table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+table tbody tr:last-of-type {
+  border-bottom: 5px solid #307032;
+}
+table th, table td {
+  padding: 15px;
+}
+
+@media only screen and (max-width: 900px) {
+  .front {
+    grid-template-rows: 2fr 3fr;
+    grid-template-columns: 1fr;
+  }
+
+  .title__title {
+    font-size: calc(16px + 1.5vw);
+    margin: auto auto;
+    padding: 0 25%;
+  }
+  .title__form {
+    padding: 0 25vw;
+  }
+
+  table {
+    font-size: 2vw;
+  }
+}

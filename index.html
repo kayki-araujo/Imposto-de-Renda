@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imposto de Renda</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <script defer src="./js/main.js"></script>
+</head>
+<body>
+    <div class="front">
+        <div class="title">
+            <h1 class="title__title">Calculadora de Salário Líquido</h1>
+        </div>
+        <div class="form">
+            <form class="form__form">
+                <input type="text" name="name" placeholder="Nome">
+                <input type="number" name="dep" placeholder="Dependentes" min="0">
+                <input type="number" name="salB" placeholder="Salário" step="any" min="0">
+                <button class="form__submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+    <div>
+    <table>
+        <tr>
+            <thead>
+                <th>Nome</th>
+                <th>Dependentes</th>
+                <th>Salario bruto</th>
+                <th>% desconto do INSS</th>
+                <th>desconto do INSS</th>
+                <th>%desconto do IRPF</th>
+                <th>desconto do IRPF</th>
+                <th>Salario liquido</th>
+            </thead>
+        </tr>
+    </table>
+    </div>
+</body>
+</html>
