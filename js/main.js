@@ -48,9 +48,9 @@ const makeTable = () => {
         imposto.name, // nome
         imposto.dep,  // dependetes
         imposto.salB, // salario bruto
-        parseFloat(100*imposto.getInssRed()/imposto.salB).toFixed(2), // % inss
+        parseFloat(100*imposto.getInssRed()/imposto.salB).toFixed(2) + "%", // % inss
         parseFloat(imposto.getInssRed()).toFixed(2), // inss
-        parseFloat(100*imposto.getIrrfRed()/imposto.salB).toFixed(2), // % irrf
+        parseFloat(100*imposto.getIrrfRed()/imposto.salB).toFixed(2) + "%", // % irrf
         parseFloat(imposto.getIrrfRed()).toFixed(2), // irrf
         parseFloat(imposto.salB - imposto.getInssRed() - imposto.getIrrfRed()).toFixed(2) // salario liquido
     ];
