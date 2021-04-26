@@ -9,11 +9,11 @@ const imposto = {
         if (this.salB <= 1100) {
             return this.salB*0.075;
         } else if (this.salB <= 2203.48){
-            return this.salB*0.09;
+            return (this.salB-1100)*0.09+82.5;
         } else if (this.salB <= 3305.22){
-            return this.salB*0.12;
+            return (this.salB-2203.48)*0.12+181.8132;
         } else if (this.salB <= 6433.57) {
-            return this.salB*0.14;
+            return (this.salB-3305.22)*0.14+314.022;
         } else {
             return 751.99;
         }
