@@ -70,4 +70,3 @@ form.addEventListener("submit", event => {
     table.appendChild(makeTable());
     table.style.display = "table";
 });
-
